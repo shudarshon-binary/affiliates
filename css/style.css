@@ -25,15 +25,16 @@ summary {
           box-sizing: border-box;
 }
 /* Affiliates */
-.Header__title {color:#fff; text-align:right;  margin-top:5px!important;}
+.Header__title {color:#fff; text-align:right; font-weight:300!important; margin-top:5px!important;}
 .affiliate--accounts a {color:#fff; float:left;}
 .FBWG {margin-top:50px;}
 .fb-like {font-size:18px!important;}
-.award {width:15%; margin-left:20px; margin-right:20px;}
+.award {width:15%; margin-left:20px; margin-top:5px; margin-right:20px; margin-bottom:5px; }
 .Section__Info {background-color:#f2f2f2;}
-.Section__License {background-color:#2a3052; color:#ffffff; font-size:12px;}
+.Section__License {background-color:#2a3052; color:#ffffff; font-size:11px;}
 .Section__License h1 {display:table!important; height:100%; margin:50px 0;}
-.Section__License--title {}
+.Section__License--title {text-align:center;}
+.Section__License__Logos {background-color:#15212d; color:#ffffff; font-size:11px; padding: 5px 0;}
 .Certificate {text-align:center;}
 .Certificate img {max-width:150px;}
 .Testimonials {margin-top:30px; margin-bottom:30px; padding: 20px 0; text-align:center; border-top:1px solid #f2f2f2; border-bottom:1px solid #f2f2f2; }
@@ -44,9 +45,17 @@ td {text-align:center;}
 .Commision--Rates {margin-top:30px;}
 .strong {font-weight:bold;}
 .binary--section {padding-top:30px; padding-bottom:30px;}
-
-
-
+.iom {width:85px; padding-top:10px;}
+.mifid {width:150px; padding-top:25px; float:right; padding-right:5px;}
+.mga {padding-top:8px;}
+.mfsa {padding-top:45px;}
+.legal--info {padding-top:10px;}
+@media (max-width: 480px) {
+.iom {width:45px; padding-top:15px;}
+.mifid {width:150px; padding-top:25px; float:right; padding-right:5px;}
+.mga {padding-top:15px;}
+.mfsa {padding-top:30px;}
+}
 
 
 
@@ -98,12 +107,12 @@ a h2:hover {color:inherit;}
 
 .Page-Grid__grid-wrap {overflow: hidden; margin: -10px -10px;}
 .Page-Grid__grid-wrap p{margin: 10px 10px;}
-.Page-Grid__grid-wrap__box {float: left;  position: relative; width: 25%; padding-bottom: 20%;}
-.Page-Grid__grid-wrap__box__boxInner {position: absolute; left: 10px; right: 10px; top: 10px; bottom: 10px; border:0px solid #dedede; padding:0px; text-align:center; background:none; background-repeat:no-repeat; background-size:cover; background-position:center;}
+.Page-Grid__grid-wrap__box {float: left;  position: relative; width: 25%; padding-bottom: 10%;}
+.Page-Grid__grid-wrap__box__boxInner {position: absolute; left: 10px; right: 10px; top: 10px; bottom: 10px; border:0px solid #dedede; padding:0px; text-align:center; background:none; }
 .Page-Grid__grid-wrap__box__boxInner:hover {}
 .Page-Grid__grid-wrap__box__boxInner__title {font-weight:400; font-size:16px; position:absolute; bottom:0px;left:0;right:0;padding:20px;}
-.Page-Grid__grid-wrap__box__boxInner__vendor {display:block; float:left;position:absolute;bottom:20px;left:5px; right:5px; padding:0px; background:transparent;  text-align:center;}
-.Page-Grid__grid-wrap__box__boxInner__vendor img { height:auto; margin:0 auto;}
+.Page-Grid__grid-wrap__box__boxInner__vendor {display:block; float:left;position:absolute;bottom:0px;left:5px; right:5px; padding:0px; background:transparent;  text-align:center;}
+.Page-Grid__grid-wrap__box__boxInner__vendor img { height:80px; margin:0 auto;}
 .grid--date {display:block; background:#fff; font-weight:400; font-size:14px; position:absolute; bottom:-14px;left:2px; right:2px; padding:5px; z-index:999;}
 @media only screen and (max-width : 768px) {
 .Page-Grid__grid-wrap__box {float: left;  position: relative; width: 50%; padding-bottom: 50%;}
