@@ -11,7 +11,7 @@ email: marketing@binary.com
 description: > # this means to ignore newlines until "baseurl:"
   Join Binary.com's affiliate program now. Start earning commission through the premier platform for binary options trading since 1999.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://affiliates.binary.pw" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  
 
