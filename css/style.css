@@ -37,14 +37,13 @@ summary {
 .Section__License__Logos {background-color:#15212d; color:#ffffff; font-size:11px; padding: 5px 0;}
 .Certificate {text-align:center;}
 .Certificate img {max-width:150px;}
-.Testimonials {margin-top:30px; margin-bottom:30px; padding: 20px 0; text-align:center; border-top:1px solid #f2f2f2; border-bottom:1px solid #f2f2f2; }
-.Testimonials__content {font-size:16px;}
-.Testimonials__author {display:block; font-weight:bold; margin-top:10px;}
-.Testimonials__company {display:block;}
+.Testimonials {margin-top:30px; margin-bottom:30px; padding: 20px 0; text-align:center;  }
+
 td {text-align:center;}
 .Commision--Rates {margin-top:30px;}
 .strong {font-weight:bold;}
-.binary--section {padding-top:30px; padding-bottom:30px;}
+.binary--section {padding-top:40px; padding-bottom:40px; }
+.section {border-bottom: 1px solid #DEDEDE; }
 .iom {width:85px; padding-top:10px;}
 .mifid {width:150px; padding-top:25px; float:right; padding-right:5px;}
 .mga {padding-top:8px;}
@@ -340,4 +339,43 @@ a h2:hover {color:inherit;}
     display: inline-block;
     width: 111px;
     height: 38px
+}
+.xquote {
+    background-color: #F2F2F2;
+    padding: 20px 40px
+}
+.xquote p {
+    font-style: italic
+}
+.xbubble-right {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 5px 0 10px;
+    border-color: #F2F2F2 transparent transparent;
+    position: relative;
+    left: 80%
+}
+.xbubble-left {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 10px 0 5px;
+    border-color: #F2F2F2 transparent transparent;
+    position: relative;
+    left: 10%
+}
+.xquoter-left {
+    text-align: left
+}
+.xquoter-right {
+    text-align: right
+}
+
+.xquoter-left p span,
+.xquoter-right p span {
+    font-size: 12px;
+    font-style: italic
 }
