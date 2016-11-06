@@ -25,6 +25,8 @@ summary {
           box-sizing: border-box;
 }
 /* Affiliates */
+button {color:#fff;}
+.aff-contacts {text-align:center;}
 .Header__title {color:#fff; text-align:right; font-weight:300!important; margin-top:5px!important;}
 .affiliate--accounts a {color:#fff; float:left;}
 .FBWG {margin-top:50px;}

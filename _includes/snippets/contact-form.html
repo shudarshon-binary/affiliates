@@ -1,1 +1,91 @@
-Contact Form
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+	{% if siteLang == "en" %}
+		<form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>
+	{% elsif siteLang == "de" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>
+	{% elsif siteLang == "ru" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "pt" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "it" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "fr" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "id" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "cn" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "tc" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "pl" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% elsif siteLang == "th" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>	
+	{% else %}
+		<form>
+			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
+			<p><button type="submit" name="button">Submit</button>
+		</form>
+	{% endif %}	
+	</div>
+	<div class="col-sm-3"></div>
+</div>
