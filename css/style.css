@@ -46,17 +46,17 @@ td {text-align:center;}
 .section {border-bottom: 1px solid #DEDEDE; }
 .iom {width:85px; padding-top:10px;}
 .mifid {width:150px; padding-top:25px; float:right; padding-right:5px;}
-.mga {padding-top:8px;}
+.mga {padding-top:25px; width:150px; margin-left:-20px;}
 .mfsa {padding-top:45px;}
 .legal--info {padding-top:10px;}
 @media (max-width: 480px) {
 .iom {width:45px; padding-top:15px;}
 .mifid {width:150px; padding-top:25px; float:right; padding-right:5px;}
-.mga {padding-top:15px;}
+.mga {padding-top:25px;}
 .mfsa {padding-top:30px;}
 }
 .subheading {font-size:36px;}
-
+.test { background-color:#eee!important;}
 
 a h2:hover {color:inherit;}
 /* Header */
