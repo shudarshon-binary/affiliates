@@ -35,7 +35,7 @@ button {color:#fff;}
 .Section__Info {background-color:#f2f2f2;}
 .Section__License {background-color:#2a3052; color:#ffffff; font-size:11px;}
 .Section__License h1 {display:table!important; height:100%; margin:50px 0;}
-.Section__License--title {text-align:center; font-size:20px;}
+.Section__License--title {text-align:center;}
 .Section__License__Logos {background-color:#15212d; color:#ffffff; font-size:11px; padding: 5px 0;}
 .Certificate {text-align:center;}
 .Certificate img {max-width:150px;}
@@ -57,7 +57,7 @@ td {text-align:center;}
 .mga {padding-top:25px;}
 .mfsa {padding-top:30px;}
 }
-.subheading {font-size:36px;}
+.subheading {font-size:26px;}
 .test { background-color:#eee!important;}
 
 a h2:hover {color:inherit;}
