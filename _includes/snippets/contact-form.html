@@ -12,73 +12,81 @@
 	    <form>
 			<p><input type="text" id="name" placeholder="Name"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Nachricht"></textarea></p>
+			<p><button type="submit" name="button">Formular absenden</button>
 		</form>
 	{% elsif siteLang == "ru" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Имя"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Сообщение"></textarea></p>
+			<p><button type="submit" name="button">Отправить</button>
 		</form>	
 	{% elsif siteLang == "pt" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Nome"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Mensagem"></textarea></p>
+			<p><button type="submit" name="button">Enviar formulário</button>
 		</form>	
 	{% elsif siteLang == "it" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Nome"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Messaggio"></textarea></p>
+			<p><button type="submit" name="button">Invia modulo</button>
 		</form>	
 	{% elsif siteLang == "fr" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Nom"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
 			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><button type="submit" name="button">Envoyer le formulaire</button>
 		</form>	
 	{% elsif siteLang == "id" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Nama"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
-		</form>	
-	{% elsif siteLang == "cn" %}
-	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
-			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
-		</form>	
-	{% elsif siteLang == "tc" %}
-	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
-			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
-		</form>	
+			<p><textarea name="message" rows="8" cols="40" placeholder="Pesan"></textarea></p>
+			<p><button type="submit" name="button">Kirim Formulir</button>
+		</form>		
 	{% elsif siteLang == "pl" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
+			<p><input type="text" id="name" placeholder="Imię"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Wiadomość"></textarea></p>
+			<p><button type="submit" name="button">Wyślij formularz</button>
 		</form>	
+	{% elsif siteLang == "zh_cn" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="姓名"/></p>
+			<p><input type="text" id="email" placeholder="电子邮件"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="留言"></textarea></p>
+			<p><button type="submit" name="button">提交表格</button>
+		</form>	
+	{% elsif siteLang == "zh_tw" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="姓名"/></p>
+			<p><input type="text" id="email" placeholder="電子郵件"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="留言"></textarea></p>
+			<p><button type="submit" name="button">提交表格</button>
+		</form>		
 	{% elsif siteLang == "th" %}
 	    <form>
-			<p><input type="text" id="name" placeholder="Name"/></p>
-			<p><input type="text" id="email" placeholder="Email"/></p>
-			<p><textarea name="message" rows="8" cols="40" placeholder="Message"></textarea></p>
-			<p><button type="submit" name="button">Submit</button>
+			<p><input type="text" id="name" placeholder="ชื่อ"/></p>
+			<p><input type="text" id="email" placeholder="อีเมล์"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="ข้อความ"></textarea></p>
+			<p><button type="submit" name="button">ส่งข้อมูล</button>
 		</form>	
 	{% else %}
+	{% elsif siteLang == "vt" %}
+	    <form>
+			<p><input type="text" id="name" placeholder="Tên"/></p>
+			<p><input type="text" id="email" placeholder="Email"/></p>
+			<p><textarea name="message" rows="8" cols="40" placeholder="Thông điệp"></textarea></p>
+			<p><button type="submit" name="button">Gửi đơn</button>
+		</form>	
+	{% else %}	
 		<form>
 			<p><input type="text" id="name" placeholder="Name"/></p>
 			<p><input type="text" id="email" placeholder="Email"/></p>
