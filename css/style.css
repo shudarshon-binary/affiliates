@@ -170,28 +170,30 @@ a h2:hover {
     color: inherit
 }
 
-.Top-Bar {
+#topbar {
     display: table;
     width: 100%;
     color: #fff;
     line-height: 1;
     font-size: 70%;
     text-align: right;
-    padding: 3px 0;
-    background: #15212d
+    padding: 0;
+    background: #15212d;
+	margin:0;
 }
 
 .Top-Bar__contacts {
     display: inline;
-    text-align: right
+    text-align: right;
+	margin:0;
 }
 
 .Top-Bar__contacts a {
     display: inline-block;
     color: #fff;
     margin: 0 10px;
-    padding-top: 5px;
-    padding-right: 23px;
+    padding-top: 10px;
+    padding-right: 17px;
     font-size: 13px;
     font-weight: 700
 }
@@ -199,14 +201,12 @@ a h2:hover {
 .Top-Bar__language {
     display: inline;
     float: right;
-    text-align: right
+    text-align: right;
+	margin:0;
 }
 
-.Top-Bar__language select {
-    padding: 0;
-    margin: 0
-}
 
+#language_select {padding:4px 0;margin-top: -1px; margin-bottom: -1px; margin-right: 1px;}
 .Header {
     display: table;
     width: 100%;
@@ -216,7 +216,7 @@ a h2:hover {
 }
 
 .Header__logo {
-    margin: 5px 0
+    margin: 10px 0 10px 0;
 }
 
 .Header__logo div {
@@ -239,8 +239,8 @@ a h2:hover {
 }
 
 .Header__logo__text img {
-    max-width: 66%;
-    margin-top: 0
+    max-width: 67%;
+    margin-top: 2px
 }
 
 .Header__title {
@@ -366,17 +366,16 @@ a h2:hover {
 }
 
 @media (max-width:768px) {
+	#topbar, #header {text-align:center;}
     .Certificate img,
     .Header__logo,
-    .Top-Bar a:link {
-        text-align: center
-    }
-    .Top-Bar a:link {
-        display: block;
-        margin: 5px 0;
-        padding: 5px 0
+    #topbar a {
+        display: inline-block;
+        margin: 15px 10px;
+        padding: 10px 0
     }
     .Top-Bar__language {
+		display:block;
         text-align: center;
         clear: both;
         width: 100%;
@@ -386,6 +385,7 @@ a h2:hover {
         margin-top: 20px;
         margin-bottom: 20px
     }
+	#language_select {margin-top:0px; margin-bottom:20px;}
 }
 
 #citadel,
