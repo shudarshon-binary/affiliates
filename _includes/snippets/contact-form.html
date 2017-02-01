@@ -2,71 +2,84 @@
 <div class="row">
 	<div class="col-sm-3"></div>
 		<div class="col-sm-6">
-		<form>
+		<form method="post" action="http://binary.pw/submit.php">
 		{% if siteLang == "en" %}		
 				<p><input type="text" id="name" name="name" placeholder="Name"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Message"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Submit</button>
 		{% elsif siteLang == "de" %}
 				<p><input type="text" id="name" name="name" placeholder="Name"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Nachricht"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Formular absenden</button>
 		{% elsif siteLang == "ru" %}
 				<p><input type="text" id="name" name="name" placeholder="Имя"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Сообщение"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Отправить</button>			
 		{% elsif siteLang == "pt" %}
 				<p><input type="text" id="name" name="name" placeholder="Nome"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Mensagem"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Enviar formulário</button>
 		{% elsif siteLang == "it" %}
 				<p><input type="text" id="name" name="name" placeholder="Nome"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Messaggio"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Invia modulo</button>
 		{% elsif siteLang == "fr" %}
 				<p><input type="text" id="name" name="name" placeholder="Nom"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Message"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Envoyer le formulaire</button>
 		{% elsif siteLang == "id" %}
 				<p><input type="text" id="name" name="name" placeholder="Nama"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Pesan"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Kirim Formulir</button>		
 		{% elsif siteLang == "pl" %}
 				<p><input type="text" id="name" name="name" placeholder="Imię"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Wiadomość"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Wyślij formularz</button>
 		{% elsif siteLang == "zh_cn" %}
 				<p><input type="text" id="name" name="name" placeholder="姓名"/></p>
 				<p><input type="text" id="email" name="email" placeholder="电子邮件"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="留言"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">提交表格</button>
 		{% elsif siteLang == "zh_tw" %}
 				<p><input type="text" id="name" name="name" placeholder="姓名"/></p>
 				<p><input type="text" id="email" name="email" placeholder="電子郵件"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="留言"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">提交表格</button>	
 		{% elsif siteLang == "th" %}
 				<p><input type="text" id="name" name="name" placeholder="ชื่อ"/></p>
 				<p><input type="text" id="email" name="email" placeholder="อีเมล์"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="ข้อความ"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">ส่งข้อมูล</button>
 		{% elsif siteLang == "vt" %}
 				<p><input type="text" id="name" name="name" placeholder="Tên"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Thông điệp"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Gửi đơn</button>
 		{% else %}	
 				<p><input type="text" id="name" name="name" placeholder="Name"/></p>
 				<p><input type="text" id="email" name="email" placeholder="Email"/></p>
 				<p><textarea name="message" rows="8" cols="40" name="message" placeholder="Message"></textarea></p>
+				<p class="check"><input name="url" /></p>
 				<p><button type="submit" name="button">Submit</button>
 		{% endif %}	
 		</form>
