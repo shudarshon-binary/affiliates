@@ -28,6 +28,11 @@ summary {
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
+.topbar {min-height: 28px; }
+#select_language {z-index:9999!important;}
+#select_language li a:link {color:#000000!important; font-weight:normal!important;}
+#select_language li a:visited {color:#000000!important; font-weight:normal!important;}
+
 button {
     color: #fff
 }
@@ -146,10 +151,7 @@ a h2:hover {
     text-align: right;
 	margin:0;
 }
-#language_select {padding:0px 0;margin-right: 1px;}
-.logo-parent {display:block; padding-top:10px; padding-left:1px;}
-.logo {max-width:100%; width:55px;}
-.binary-logo-text {margin-left:-3px; width:178px; margin-top:0px; padding-top:0px;display:inline-table;}
+
 .Header__title {
     color: #fff;
     margin: 0;
@@ -157,14 +159,10 @@ a h2:hover {
     text-align: right
 }
 @media (max-width:992px) {
-	#topbar, #header {text-align:center;}
     .Header__title {
         text-align: center;
         margin-bottom: 10px
     }
-    .logo-parent {text-align:center;}
-    .logo{width:55px!important; margin-right:-10px;}
-    .binary-logo-text {visibility:visible!important; display:inline-block!important;}
 }
 @media (max-width:768px) {
 	
@@ -185,7 +183,6 @@ a h2:hover {
         margin-top: 20px;
         margin-bottom: 20px
     }
-	#language_select {margin-top:0px; margin-bottom:20px;}
 }
 .p--action {
     text-align: center!important;
