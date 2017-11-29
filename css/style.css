@@ -1,3 +1,6 @@
+---
+---
+{% include sourceurl.html %}
 .Certificate,
 .Section__License--title,
 .Testimonials,
@@ -440,3 +443,67 @@ a h2:hover {
 .video-thumb img {padding-bottom: 1em;}
 .video-thumb p{font-size: 14px;margin: 0;}
 .video-container-md {display: block;text-align:center;margin:30px 0 0px 0;}.video-container-md embed,.video-container-md iframe,.video-container-md object{width:560px;height:315px;border:0}
+.ico-banner-layout {
+	background-image: url({{ '/images/ico/970x90-bg.jpg' | prepend: SourceUrl }});
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+.ico-banner-title {
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	color: #e98024;
+	margin-top: 15px
+}
+.ico-banner-subtitle {
+	display: block;
+	font-weight: 400;
+	font-size: 24px;
+	
+}
+.ico-banner-col-end-date {
+	border-left: 30px solid transparent;
+    border-bottom: 100px solid #e98024; 
+	height: 0;
+    line-height: 40px;
+	padding: 0px;
+	margin: 0px;
+	margin-left: -15px;
+}
+.ico-banner-ends {
+    display: block;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 32px;
+	color: #fff;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+.ico-date {
+	display: block;
+}
+@media only screen and (max-width: 998px) {
+	  .ico-banner-col-end-date {
+		border-left: 0px;
+		border-bottom: 0px; 
+		height: 100%;
+		line-height: auto;
+		background-color: #e98024;
+		padding: 15px 0;
+        margin: 0 15px;
+        margin-top: 20px;
+	}
+	.ico-banner-ends {
+		margin: 0;
+      	padding: 5px;
+	}
+	.ico-date {
+		display: inline;
+	}
+}
+.ico-banner-links:hover {
+  	text-decoration: none;
+}
