@@ -5,7 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" 
 url: "https://affiliates.binary.com" 
 twitter_username: 
-github_username:  
+github_username: 
+future: true
 
 # Build settings
 markdown: kramdown
