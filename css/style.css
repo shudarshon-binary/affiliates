@@ -185,6 +185,18 @@ a h2:hover {
         width: 100%;
         padding-bottom: 5px
     }
+	.Top-Bar__contacts {
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.languages {
+		display: table !important;
+		text-align: center !important;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
     .Certificate img {
         margin-top: 20px;
         margin-bottom: 20px
@@ -278,7 +290,12 @@ a h2:hover {
         line-height: 50px
     }
 }
-
+@media only screen and (max-width:576px) {
+    .logo-wrapper {
+		display: block;
+		text-align: center !important;
+	}
+}
 
 
 
@@ -486,7 +503,7 @@ a h2:hover {
 .ico-date {
 	display: block;
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 992px) {
 	  .ico-banner-col-end-date {
 		border-left: 0px;
 		border-bottom: 0px; 
