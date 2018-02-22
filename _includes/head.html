@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://style.binary.com/binary.css">
 	<link rel="stylesheet" href="{{ '/css/grid.css' | prepend: SourceUrl  }}">
 	<link rel="stylesheet" href="{{ '/css/style.css' | prepend: SourceUrl  }}">
+    {% if siteLang == 'jp' %}<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,800,900&amp;subset=cyrillic,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/jp-style.css' | prepend: SourceUrl  }}">{% endif %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://style.binary.com/binary.js"></script>

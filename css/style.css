@@ -470,35 +470,6 @@ a h2:hover {
 .video-thumb p{font-size: 14px;margin: 0;}
 .video-container-md {display: block;text-align:center;margin:30px 0 0px 0;}.video-container-md embed,.video-container-md iframe,.video-container-md object{width:560px;height:315px;border:0}
 
-/* JP page */
-.logo-wrapper-jp {
-    padding:10px 0;
-}
-.logo-jp {
-    background: url(../images/logo-jp-HD.svg) no-repeat;
-    height: 50px; 
-    display: block;
-}
-
-/* home */
-
-.home--header {
-	width: 100%; /* for IE 6 */
-	background:  
-	linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    ),
-	url(../images/1header-lp.jpg);
-    background-size: cover;
-	padding: 40px 20px;
-	background-position: center;
-    height: 600px;
-}
-
-.home--header-content {
-	padding: 50px 0;
-}
 
 .font-xl {
     font-size: 48px;

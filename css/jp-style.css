@@ -1,0 +1,101 @@
+---
+---
+{% include geturl.html %}
+
+body {
+	
+}
+.jp-section {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+/* JP page */
+.logo-wrapper-jp {
+    padding: 15px 0;
+}
+.logo-jp {
+    background: url(../images/logo-jp-HD.svg) no-repeat;
+    height: 50px; 
+    display: block;
+}
+
+/* home */
+
+.home--header {
+	width: 100%; /* for IE 6 */
+	background:  
+	linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+	url(../images/1header-lp.jpg);
+    background-size: cover;
+	padding: 40px 20px;
+	background-position: center;
+    min-height: 600px;
+}
+
+
+.font-mst {
+    font-family: 'Montserrat', sans-serif;
+}
+.title-xxs {
+    font-size: 16px;
+}
+.title-xs {
+    font-size: 18px;
+}
+.title-sm {
+    font-size: 22px;
+}
+.title-md {
+    font-size: 28px;
+}
+.title-xl {
+    font-size: 36px;
+}
+.title-xxl {
+    font-size: 48px;
+}
+.ft-100 {
+    font-weight: 100;
+}
+.ft-200 {
+    font-weight: 200;
+}
+.ft-300 {
+    font-weight: 300;
+}
+.ft-400 {
+    font-weight: 400;
+}
+.ft-500 {
+    font-weight: 500;
+}
+.ft-700 {
+    font-weight: 700;
+}
+.ft-800 {
+    font-weight: 800;
+}
+.ft-900 {
+    font-weight: 900;
+}
+.ft-444 {
+    color: #333;
+}
+.al-right {
+    text-align: right;
+}
+.divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+}
+
+img {
+    max-width: 100%;
+}
+.top-50 {
+    margin-top: 100px;
+}
