@@ -4,7 +4,17 @@ layout: compress
 <!DOCTYPE html>
 {% include lang.html %}
 <html lang="{{ siteLang }}">
-{% include head.html %}    
+{% include head.html %}
+    {% if siteLang == 'jp' %}
+    {% include jp-header.html %}
+        <div class="container-xl">
+			<div class="row">
+				<div class="col">	
+					Japan
+				</div>
+			</div>
+		</div>
+    {% else %}
     {% include header.html %}	
 		<div class="container">
 			<div class="row">
@@ -17,7 +27,8 @@ layout: compress
 				</div>
 			</div>
 		</div>
-			<div class="rte">{{ content }}</div>			   
+    {% endif %}
+   {{ content }}		   
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
 	<script src="{{ '/js/code.js' | prepend: site.url }}" defer></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 

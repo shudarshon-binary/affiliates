@@ -1,0 +1,5 @@
+{% assign coresource = site.github.url %}
+{% if coresource contains "https" %}{% assign SourceUrl = site.github.url %}
+{% else %}
+{% assign SourceUrl = site.github.url | replace: 'http', 'https' %}
+{% endif %}

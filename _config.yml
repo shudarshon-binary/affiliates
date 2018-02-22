@@ -8,8 +8,13 @@ twitter_username:
 github_username: 
 future: true
 
-# Build settings
+livereload: true
+
 markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-livereload
+  
 exclude:
   - Gemfile
   - Gemfile.lock
