@@ -6,8 +6,8 @@ body {
 	
 }
 .jp-section {
-    padding-top: 50px;
-    padding-bottom: 50px
+    padding-top: 80px;
+    padding-bottom: 80px
 }
 /* JP page */
 .logo-wrapper-jp {
@@ -99,3 +99,4 @@ img {
 .top-50 {
     margin-top: 100px;
 }
+
