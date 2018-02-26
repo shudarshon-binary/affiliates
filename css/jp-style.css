@@ -484,6 +484,7 @@ navbar-custom {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #2a3052;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0px solid rgba(0, 0, 0, .1);
+     /* box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.05), 0 4px 12px 0 rgba(0, 0, 0, 0.1); */
   }
 }
