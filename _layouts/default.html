@@ -3,8 +3,9 @@ layout: compress
 ---
 <!DOCTYPE html>
 {% include lang.html %}
+{% include geturl.html %}
 <html lang="{{ siteLang }}">
-{% include head.html %}
+    {% include head.html %}
     {% if siteLang == 'jp' %}
     {% include jp-header.html %}
     {% else %}
@@ -22,9 +23,5 @@ layout: compress
 		</div>
     {% endif %}
    {{ content }}		   
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
-	<script src="{{ '/js/code.js' | prepend: site.url }}" defer></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-	<script src="{{ '/js/ie10-viewport-bug-workaround.js' | prepend: site.url }}"></script>
 	</body>
 </html>
