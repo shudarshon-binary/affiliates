@@ -15,6 +15,9 @@ plugins:
   - jekyll-feed
   - jekyll-livereload
   
+sass:
+  style: :compressed 
+  
 exclude:
   - Gemfile
   - Gemfile.lock

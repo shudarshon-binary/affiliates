@@ -158,6 +158,21 @@ a, a:visited {outline: none;}
 .al-right {
     text-align: right;
 }
+.separator-md {
+    height: 20px
+}
+
+.separator-lg {
+    height: 30px
+}
+
+.separator-xl {
+    height: 50px
+}
+
+.separator-xxl {
+    height: 100px
+}
 .divider {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -222,6 +237,17 @@ img {
     width: auto;
     margin: 20px;
 }
+.box-shadow {
+       transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.05), 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.box-shadow-hover:hover {
+    box-shadow: 0 3px 28px 0 rgba(0, 0, 0, 0.03), 0 3px 28px 0 rgba(0, 0, 0, 0.3);
+}
+.bordered {
+    border: 1px solid #dedede;
+}
+
 /* */
 /* ==========================================================================
 Video
@@ -283,8 +309,8 @@ section.video a:hover i, section.video a:focus i {
 
 .icon-sm {
 	margin-bottom: 0px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -337,18 +363,23 @@ section.video a:hover i, section.video a:focus i {
 }
 
 .icon-support {
-    background: url(../images/icons/support.png) no-repeat;
+    background: url(../images/icons/chat.svg) no-repeat;
     background-size: 40px 40px;
     background-position: center;
 }
 .icon-analytics {
-    background: url(../images/icons/analize.png) no-repeat;
+    background: url(../images/icons/analytics.svg) no-repeat;
     background-size: 40px 40px;
     background-position: center;
     fill: #FF9E2C;
 }
+.icon-analytics-sm {
+    background: url(../images/icons/analize.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 .icon-materials {
-    background: url(../images/icons/media.png) no-repeat;
+    background: url(../images/icons/media.svg) no-repeat;
     background-size: 40px 40px;
     background-position: center;
 }
@@ -367,8 +398,18 @@ section.video a:hover i, section.video a:focus i {
     background-size: 40px 40px;
     background-position: center;
 }
+.icon-earn-wh {
+    background: url(../images/icons/noun_399501_cc-wh.svg) no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+}
 .icon-earn {
     background: url(../images/icons/noun_399501_cc.svg) no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+}
+.icon-cash {
+    background: url(../images/icons/money.svg) no-repeat;
     background-size: 40px 40px;
     background-position: center;
 }
@@ -512,4 +553,113 @@ section.video a:hover i, section.video a:focus i {
     width: 100%;
     height: 100%; 
     border: 10px solid #f2f2f2;
+}
+
+/* Card */
+
+.card {
+	border-radius: 3px;
+	margin-bottom: 30px;
+    /* box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.01), 0 2px 20px 0 rgba(0, 0, 0, 0.12); */
+}
+.card .caption {
+	padding: 10px 20px 0 20px;
+}
+
+@media only screen and (max-width : 576px) {
+	.card {
+		margin-bottom: 15px;
+  }
+}
+
+/* FLEXBOX
+   - Equal Height Columns in Rows
+   - Equal Height Thumbnails
+   - Flex Grow to Fill Paragraph Height
+*/
+
+@media only screen and (min-width : 481px) {
+  .flex-row.row {
+    display: flex;
+	 flex-wrap: wrap;
+  }
+  .flex-row.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row.row:after,
+  .flex-row.row:before {
+	 display: flex;
+  }
+  .flex-row.row > [class*='col-'] > .box {
+    display: flex;
+	 flex: 1;
+  }
+}
+
+
+
+
+/* Grow thumbnails to fill columns height */
+.flex-row .thumbnail,
+.flex-row .caption {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
+
+/* Flex Grow Text Container */
+.flex-row .caption p.flex-text {
+	flex-grow: 1;
+}
+
+/* Flex Responsive Image */
+.flex-row img {
+	width: 100%;
+	height: auto;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Small Gutters */
+.row.sm-gutters {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row.sm-gutters > [class^="col-"],
+.row.sm-gutters > [class*=" col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.sm-gutters {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.img-zoom {
+  position: relative;
+  overflow: hidden;
+}
+.img-zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.img-zoom:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }

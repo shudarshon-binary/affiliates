@@ -1,0 +1,156 @@
+/* Margins */
+
+.top-50 {
+    margin-top: 50px;
+}
+
+.top-100 {
+    margin-top: 100px;
+}
+.top-200 {
+    margin-top: 200px;
+}
+.bottom-50 {
+    margin-bottom: 50px;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.no-margins {
+    margin: 0;
+}
+
+.top-neg-20 {
+    margin-top: -20px;
+}
+
+.v-margin-sm {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.transparent {
+    background: none;
+}
+
+/* Separators */
+
+.separator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+}
+
+.separator-md {
+    height: 20px
+}
+
+.separator-lg {
+    height: 30px
+}
+
+.separator-xl {
+    height: 50px
+}
+
+.separator-xxl {
+    height: 100px
+}
+
+.separator-line-dark {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 1px;
+    background-color: #252f38;
+}
+
+.separator-line-lg-dark {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 1px;
+    background-color: #252f38;
+}
+
+.separator-line-thin-gray-xs {
+    height: 1px;
+    background-color: #dedede;
+    margin: 0;
+}
+
+.separator-line-thin-gray {
+    height: 1px;
+    background-color: #dedede;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separator-line-thin-gray-md {
+    height: 1px;
+    background-color: #dedede;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.separator-line-thin-gray-lg {
+    height: 1px;
+    background-color: #dedede;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/* Typography */
+
+.title-xxs {
+    font-size: 16px;
+}
+.title-xs {
+    font-size: 18px;
+}
+.title-sm {
+    font-size: 22px;
+}
+.title-md {
+    font-size: 28px;
+}
+.title-xl {
+    font-size: 36px;
+}
+.title-xxl {
+    font-size: 48px;
+}
+.title-3xl {
+    font-size: 72px;
+}
+@media screen and (max-width: 480px) {
+    .title-3xl {
+        font-size: 48px;
+    }
+}
+.ft-100 {
+    font-weight: 100;
+}
+.ft-200 {
+    font-weight: 200;
+}
+.ft-300 {
+    font-weight: 300;
+}
+.ft-400 {
+    font-weight: 400;
+}
+.ft-500 {
+    font-weight: 500;
+}
+.ft-700 {
+    font-weight: 700;
+}
+.ft-800 {
+    font-weight: 800;
+}
+.ft-900 {
+    font-weight: 900;
+}
+.ft-444 {
+    color: #333;
+}
