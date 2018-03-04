@@ -24,6 +24,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.pw-xl {
+    font-size: 54px;
+    color: #777;
+}
+
 .pw-clickandbuy:before {
 	content: "\e61d";
 }
