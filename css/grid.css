@@ -45,10 +45,16 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 970px;
-  }
+  } 
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 970px;
+  } 
 }
 
 .container-fluid {
