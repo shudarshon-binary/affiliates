@@ -6,7 +6,7 @@
 	<title>{% if page.title %}Binary.com Affiliates {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="keywords" content="{{page.keywords}}">
-	<link rel="icon" href="{{ '/images/binary-icon.png' | prepend: SourceUrl  }}" sizes="57x57"/>
+	<link rel="icon" href="{{ '/assets/images/binary-icon.png' | prepend: SourceUrl  }}" sizes="57x57"/>
 	<link rel="stylesheet" href="https://style.binary.com/binary.css">
     {% include getsource.html %}
     {% if siteLang == 'ja' %}
