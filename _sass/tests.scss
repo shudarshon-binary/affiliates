@@ -39,6 +39,15 @@
     }
 }
 
+@media (max-width: 992px) {
+  .md-top-50 {
+        margin-top: 50px;
+    }
+    .md-center {
+        text-align: center;
+    }
+}
+
 /* Modal */
 
 .modal {
