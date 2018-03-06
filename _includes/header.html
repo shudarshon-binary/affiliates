@@ -1,3 +1,4 @@
+{% include geturl.html %}
 <div class="topbar primary-bg-color-dark">
 	<div class="container">
 		<div class="row">
@@ -25,19 +26,19 @@
 								</div>
 							<span class="nav-caret"></span>
 						</li>
-						<li class="ID {% if siteLang == 'id' %}invisible{% endif %}"><a href="{{ '/id/' | prepend: site.url }}">Indonesia</a></li>
-						<li class="EN {% if siteLang == 'en' %}invisible{% endif %}"><a href="{{ '/' | prepend: site.url }}">English</a></li>
-						<li class="RU {% if siteLang == 'ru' %}invisible{% endif %}"><a href="{{ '/ru/' | prepend: site.url }}">Русский</a></li>
-						<li class="FR {% if siteLang == 'fr' %}invisible{% endif %}"><a href="{{ '/fr/' | prepend: site.url }}">Français</a></li>
-						<li class="ES {% if siteLang == 'es' %}invisible{% endif %}"><a href="{{ '/es/' | prepend: site.url }}">Español</a></li>
-						<li class="DE {% if siteLang == 'de' %}invisible{% endif %}"><a href="{{ '/de/' | prepend: site.url }}">Deutsch</a></li>
-						<li class="PT {% if siteLang == 'pt' %}invisible{% endif %}"><a href="{{ '/pt/' | prepend: site.url }}">Português</a></li>
-						<li class="IT {% if siteLang == 'it' %}invisible{% endif %}"><a href="{{ '/it/' | prepend: site.url }}">Italiano</a></li>
-						<li class="PL {% if siteLang == 'pl' %}invisible{% endif %}"><a href="{{ '/pl/' | prepend: site.url }}">Polski</a></li>
-						<li class="TH {% if siteLang == 'th' %}invisible{% endif %}"><a href="{{ '/th/' | prepend: site.url }}">Thai</a></li>
-						<li class="VT {% if siteLang == 'vt' %}invisible{% endif %}"><a href="{{ '/vt/' | prepend: site.url }}">Tiếng Việt</a></li>
-						<li class="zh_cn {% if siteLang == 'zh_cn' %}invisible{% endif %}"><a href="{{ '/zh_cn/' | prepend: site.url }}">简体中文</a></li>
-						<li class="zh_tw {% if siteLang == 'zh_tw' %}invisible{% endif %}"><a href="{{ '/zh_tw/' | prepend: site.url }}">繁體中文</a></li>
+						<li class="ID {% if siteLang == 'id' %}invisible{% endif %}"><a href="{{ '/id/' | prepend: SourceUrl }}">Indonesia</a></li>
+						<li class="EN {% if siteLang == 'en' %}invisible{% endif %}"><a href="{{ '/' | prepend: SourceUrl }}">English</a></li>
+						<li class="RU {% if siteLang == 'ru' %}invisible{% endif %}"><a href="{{ '/ru/' | prepend: SourceUrl }}">Русский</a></li>
+						<li class="FR {% if siteLang == 'fr' %}invisible{% endif %}"><a href="{{ '/fr/' | prepend: SourceUrl }}">Français</a></li>
+						<li class="ES {% if siteLang == 'es' %}invisible{% endif %}"><a href="{{ '/es/' | prepend: SourceUrl }}">Español</a></li>
+						<li class="DE {% if siteLang == 'de' %}invisible{% endif %}"><a href="{{ '/de/' | prepend: SourceUrl }}">Deutsch</a></li>
+						<li class="PT {% if siteLang == 'pt' %}invisible{% endif %}"><a href="{{ '/pt/' | prepend: SourceUrl }}">Português</a></li>
+						<li class="IT {% if siteLang == 'it' %}invisible{% endif %}"><a href="{{ '/it/' | prepend: SourceUrl }}">Italiano</a></li>
+						<li class="PL {% if siteLang == 'pl' %}invisible{% endif %}"><a href="{{ '/pl/' | prepend: SourceUrl }}">Polski</a></li>
+						<li class="TH {% if siteLang == 'th' %}invisible{% endif %}"><a href="{{ '/th/' | prepend: SourceUrl }}">Thai</a></li>
+						<li class="VT {% if siteLang == 'vt' %}invisible{% endif %}"><a href="{{ '/vt/' | prepend: SourceUrl }}">Tiếng Việt</a></li>
+						<li class="zh_cn {% if siteLang == 'zh_cn' %}invisible{% endif %}"><a href="{{ '/zh_cn/' | prepend: SourceUrl }}">简体中文</a></li>
+						<li class="zh_tw {% if siteLang == 'zh_tw' %}invisible{% endif %}"><a href="{{ '/zh_tw/' | prepend: SourceUrl }}">繁體中文</a></li>
 					</ul>
 			    </div>				    		
 		    </div>
@@ -49,7 +50,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="logo-wrapper">
-					<a class="logo-parent" href="/">
+					<a class="logo-parent" href="{{ '/' | prepend: SourceUrl }}">
 						<div class="logo">
 							<div></div>
 						</div>
