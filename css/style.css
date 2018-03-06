@@ -1,3 +1,7 @@
+---
+---
+{% include geturl.html %}
+
 .Certificate,
 .Section__License--title,
 .Testimonials,
@@ -57,6 +61,10 @@ button {
 }
 .award {
     width: 15%;
+    margin: 5px 20px
+}
+.awards-opwa {
+    width: 30%;
     margin: 5px 20px
 }
 .Commision--Rates,
@@ -161,11 +169,10 @@ a h2:hover {
     padding-top: 10px;
     text-align: right
 }
-@media (max-width:992px) {
-    .Header__title {
-        text-align: center;
-        margin-bottom: 10px
-    }
+@media (max-width:690px) {
+    .FBWG {
+		display: none;
+	}
 }
 @media (max-width:768px) {
 	
@@ -182,6 +189,18 @@ a h2:hover {
         width: 100%;
         padding-bottom: 5px
     }
+	.Top-Bar__contacts {
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+	}
+	.languages {
+		display: table !important;
+		text-align: center !important;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
     .Certificate img {
         margin-top: 20px;
         margin-bottom: 20px
@@ -274,8 +293,18 @@ a h2:hover {
         height: 50px;
         line-height: 50px
     }
-}
 
+}
+@media only screen and (max-width:576px) {
+    .logo-wrapper {
+		display: block;
+		text-align: center !important;
+	}
+	.Header__title {
+        text-align: center;
+        margin-bottom: 10px
+    }
+}
 
 
 
@@ -440,3 +469,16 @@ a h2:hover {
 .video-thumb img {padding-bottom: 1em;}
 .video-thumb p{font-size: 14px;margin: 0;}
 .video-container-md {display: block;text-align:center;margin:30px 0 0px 0;}.video-container-md embed,.video-container-md iframe,.video-container-md object{width:560px;height:315px;border:0}
+
+
+.font-xl {
+    font-size: 48px;
+}
+
+.font-xxl {
+    font-size: 64px;
+}
+
+.font-thin {
+    font-weight: 100;
+}
