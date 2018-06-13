@@ -1,56 +1,46 @@
-{% include geturl.html %}
-<div class="topbar primary-bg-color-dark">
-	<div class="container">
+
+<div id="page-top"></div>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="topbar"> 
+                            <div class="languages">
+                                <ul id="display_language">
+                                    <li class="EN">
+                                        <span class="world world-white"></span>
+                                            <div class="language-wrapper">
+                                                <span class="language">{% if siteLang == "en" %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% else %}English{% endif %}</span>
+                                            </div>
+                                        <span class="nav-caret"></span>
+                                    </li>
+                                </ul>
+                                <ul id="select_language">
+                                    <li class="EN">
+                                        <span class="world world-black"></span>
+                                            <div class="language-wrapper">
+                                                <span class="language">{% if siteLang == "en" %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% else %}English{% endif %}</span>
+                                            </div>
+                                        <span class="nav-caret"></span>
+                                    </li>
+                                    <li class="ID {% if siteLang == 'id' %}invisible{% endif %}"><a href="{{ '/id/' | prepend: SourceUrl }}">Indonesia</a></li>
+                                    <li class="EN {% if siteLang == 'en' %}invisible{% endif %}"><a href="{{ '/' | prepend: SourceUrl }}">English</a></li>
+                                    <li class="RU {% if siteLang == 'ru' %}invisible{% endif %}"><a href="{{ '/ru/' | prepend: SourceUrl }}">Русский</a></li>
+                                </ul>
+                            </div>				    		
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid ">
 		<div class="row">
-			<div class="col-md-10">
-				<div class="Top-Bar__contacts font-s">
-				{% include navs/contactus.html %}
-				</div>
-			</div>	
-			<div class="col-md-2">
-				<div class="languages">
-					<ul id="display_language">
-						<li class="EN">
-							<span class="world world-white"></span>
-								<div class="language-wrapper">
-									<span class="language">{% if siteLang == 'en' %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% elsif siteLang == "fr" %}Français{% elsif siteLang == "es" %}Español{% elsif siteLang == "de" %}Deutsch{% elsif siteLang == "pt" %}Português{% elsif siteLang == "it" %}Italiano{% elsif siteLang == "pl" %}Polski{% elsif siteLang == "th" %}Thai{% elsif siteLang == "vt" %}Tiếng Việt{% elsif siteLang == "zh_cn" %}简体中文{% elsif siteLang == "zh_tw" %}繁體中文{% else %}English{% endif %}</span>
-								</div>
-							<span class="nav-caret"></span>
-						</li>
-					</ul>
-					<ul id="select_language">
-						<li class="EN">
-							<span class="world world-black"></span>
-								<div class="language-wrapper">
-									<span class="language">{% if siteLang == 'en' %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% elsif siteLang == "fr" %}Français{% elsif siteLang == "es" %}Español{% elsif siteLang == "de" %}Deutsch{% elsif siteLang == "pt" %}Português{% elsif siteLang == "it" %}Italiano{% elsif siteLang == "pl" %}Polski{% elsif siteLang == "th" %}Thai{% elsif siteLang == "vt" %}Tiếng Việt{% elsif siteLang == "zh_cn" %}简体中文{% elsif siteLang == "zh_tw" %}繁體中文{% else %}English{% endif %}</span>
-								</div>
-							<span class="nav-caret"></span>
-						</li>
-						<li class="ID {% if siteLang == 'id' %}invisible{% endif %}"><a href="{{ '/id/' | prepend: SourceUrl }}">Indonesia</a></li>
-						<li class="EN {% if siteLang == 'en' %}invisible{% endif %}"><a href="{{ '/' | prepend: SourceUrl }}">English</a></li>
-						<li class="RU {% if siteLang == 'ru' %}invisible{% endif %}"><a href="{{ '/ru/' | prepend: SourceUrl }}">Русский</a></li>
-						<li class="FR {% if siteLang == 'fr' %}invisible{% endif %}"><a href="{{ '/fr/' | prepend: SourceUrl }}">Français</a></li>
-						<li class="ES {% if siteLang == 'es' %}invisible{% endif %}"><a href="{{ '/es/' | prepend: SourceUrl }}">Español</a></li>
-						<li class="DE {% if siteLang == 'de' %}invisible{% endif %}"><a href="{{ '/de/' | prepend: SourceUrl }}">Deutsch</a></li>
-						<li class="PT {% if siteLang == 'pt' %}invisible{% endif %}"><a href="{{ '/pt/' | prepend: SourceUrl }}">Português</a></li>
-						<li class="IT {% if siteLang == 'it' %}invisible{% endif %}"><a href="{{ '/it/' | prepend: SourceUrl }}">Italiano</a></li>
-						<li class="PL {% if siteLang == 'pl' %}invisible{% endif %}"><a href="{{ '/pl/' | prepend: SourceUrl }}">Polski</a></li>
-						<li class="TH {% if siteLang == 'th' %}invisible{% endif %}"><a href="{{ '/th/' | prepend: SourceUrl }}">Thai</a></li>
-						<li class="VT {% if siteLang == 'vt' %}invisible{% endif %}"><a href="{{ '/vt/' | prepend: SourceUrl }}">Tiếng Việt</a></li>
-						<li class="zh_cn {% if siteLang == 'zh_cn' %}invisible{% endif %}"><a href="{{ '/zh_cn/' | prepend: SourceUrl }}">简体中文</a></li>
-						<li class="zh_tw {% if siteLang == 'zh_tw' %}invisible{% endif %}"><a href="{{ '/zh_tw/' | prepend: SourceUrl }}">繁體中文</a></li>
-					</ul>
-			    </div>				    		
-		    </div>
-	    </div>
-	</div>	
-</div>	
-<div class="dark-blue header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-lg-3">
 				<div class="logo-wrapper">
-					<a class="logo-parent" href="{{ '/' | prepend: SourceUrl }}">
+					<a class="logo-parent page-scroll" href="#page-top">
 						<div class="logo">
 							<div></div>
 						</div>
@@ -58,11 +48,21 @@
 							<div></div>
 						</div>
 					</a>
-				</div>    
+				</div>   
 			</div>
-			<div class="col-sm-8">
-				{% include snippets/title.html %}				
-		    </div>
+			<div class="col-lg-9">              
+                <div class="row">
+                    <div class="col">
+                        <div class="topnav">
+                            <a class="page-scroll" href="#commission-plans">{{ translate.nav_commission_plans }}</a>
+                            <a class="page-scroll" href="#why-us">{{ translate.nav_why_us }}</a>
+                             <a class="page-scroll" href="#awards">{{ translate.nav_awards }}</a>
+                            <a class="page-scroll" href="#how-programme-woks">{{ translate.nav_how_it_works}}</a>
+                            <a class="page-scroll" href="#video">{{ translate.nav_video }}</a>
+                        </div>
+                      </div>  
+                 </div>   
+            </div> 
 		</div>
 	</div>
-</div>
+</nav>
