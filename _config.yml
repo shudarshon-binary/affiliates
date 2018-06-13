@@ -13,7 +13,6 @@ livereload: true
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-livereload
   
 sass:
   style: :compressed 

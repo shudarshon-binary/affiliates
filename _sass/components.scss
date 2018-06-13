@@ -1,24 +1,29 @@
 /* Logo */
 
-.logo-wrapper-jp {
-    padding: 10px 0;
-    text-align: left;
-}
-.logo-jp {
-    height: 50px;
+.logo-wrapper {
+    padding: 0px;
     margin: 0;
-    padding: 0;
 }
 
+
+
 @media screen and (max-width: 992px) {
-      .logo-wrapper-jp {
+      .logo-wrapper {
           margin-left: auto;
           margin-right: auto;
           text-align: center;
+          display: block!important;
+          padding-top: 20px;
     } 
 }
 
 /* home */
+
+.home--header-flat {
+	width: 100%; /* for IE 6 */
+	background-color: #2a3052;
+	padding: 250px 20px 200px 20px;
+}
 
 .home--header {
 	width: 100%; /* for IE 6 */
@@ -27,35 +32,135 @@
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0)
     ),
-	url(../images/computer-767776_1920.jpg);
+	url(../images/home-3.png) no-repeat;
     background-size: cover;
 	padding: 40px 20px;
-	background-position: center;
-    min-height: 700px;
+	background-position: bottom center;
+    min-height: 60vh;
     position: relative;
+}
+
+.header-content {
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.header-title {
+    font-size: 68px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-subtitle {
+    font-size: 68px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 52px;
+    font-weight: 100;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    font-size: 68px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Mel */
+
+.mel-cta {
+    font-size: 26px;
+}
+.mel-num {
+    font-size: 120px;
+    line-height:80px;
+    font-weight: 700;
+}
+.mel-bt-border {
+    border-bottom: 3px solid #e98024;
+    margin: 20px 10px;
+}
+.mel-col-icon {
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+.mel-1 {
+    font-size: 60px;
+}
+.mel-2 {
+    font-size: 48px;
+}
+.mel-3 {
+    font-size: 28px;
+}
+
+@media only screen and (max-width:1198px) {
+    .header-content {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .mel-3 {
+        font-size: 22px ;
+    }
+    .mel-num {
+        font-size: 80px ;
+        line-height:60px;
+    }
+}
+
+
+
+@media only screen and (max-width:990px) {
+    .header-title, .header-subtitle {
+        font-size: 36px;
+    }
+    .mel-1 {
+        font-size: 36px !important;
+    }
+    .mel-2 {
+        font-size: 28px!important ;
+    }
+    .mel-3 {
+        font-size: 30px ;
+    }
+    
+}
+.how-programme-woks {
+	width: 100%; /* for IE 6 */
+	background:  
+	linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+	url(../images/howprogrammeworks-bg.png) no-repeat;
+    background-size: cover;
+	background-position: center;
 }
 
 /* Video Embed */
 
 .video-container {
-    position: relative;
-    margin-top:0px;
-    margin-bottom: 80px;
-    padding-bottom: 54.5%;
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-    box-shadow: 0 3px 28px 0 rgba(0, 0, 0, 0.03), 0 3px 28px 0 rgba(0, 0, 0, 0.3);
+    width: 100%; 
+    height: 0px; 
+    position: relative; 
+    padding-bottom: 56.19%;
+    //box-shadow: 0 3px 28px 0 rgba(0, 0, 0, 0.03), 0 3px 28px 0 rgba(0, 0, 0, 0.3);
 }
 .video-container iframe,
 .video-container object,
 .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    border: 10px solid #f2f2f2;
+   width: 100%; 
+   height: 100%; 
+   position: absolute; 
+   top: 0;
+   left: 0; 
 }
 
 /* Awards */
@@ -80,4 +185,236 @@
 .footerpayment ul {
     margin-top: 0px;
     margin-bottom: 0px; 
+}
+
+.footer-legal-link,
+.footer-legal-link:visited {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/* div tables */
+
+.commission-cell {
+    display: block;
+    margin: 0 -15px;
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
+/* Social */
+
+.Social ul {
+    margin: 0;
+    padding: 0
+}
+
+.Social ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 10px
+}
+
+.Social img {
+    width: 50px;
+    height: 50px
+}
+
+.Social {
+    text-align: center;
+    margin: 15px 0
+}
+
+
+@media only screen and (max-width:992px) {
+    .Social {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        text-align: center
+    }
+    .lg-center {
+        text-align: center !important;
+    }
+}
+
+.mel-checked-icon {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+    background: url(../icons/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.mel-step-arrow {
+    width: 50px;
+    height: 50px;
+    background: url(../icons/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+}
+@media only screen and (max-width:768px) {
+    .mel-step-arrow {
+        background: url(../icons/arrow-down.svg);
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+    }
+    
+}
+
+
+.icon-value{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-commissions{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-nofees{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-4.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-calendar{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-5.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-marketing{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-data{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-7.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-income{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-8.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-platforms{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-9.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon-support{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-10.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icon {
+    margin-top: 50px;
+}
+
+.icon-signup{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-11.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+}
+
+.icon-promote{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-12.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+}
+
+.icon-earn{
+    width: 175px;
+    height: 175px;
+    max-width: 100%;
+    background: url(../icons/icon-13.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: auto;
+}
+
+.aw-image {
+    width: 240px;
+    max-width: 100%;
 }

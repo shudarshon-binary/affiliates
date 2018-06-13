@@ -1,22 +1,66 @@
-
+{% include geturl.html %}
+{% include lang.html %}
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">	
 <div class="container-fluid ">
 		<div class="row">
 			<div class="col-lg-3">
-				<div class="logo-wrapper-jp">
-                    <a class="page-scroll" href="#page-top"><img class="logo-jp" src="{{ '/images/logo-jp-HL.svg' | prepend: SourceUrl  }}" alt="binary.com"></a>
-				</div>    
+				<div class="logo-wrapper">
+					<a class="logo-parent page-scroll" href="#page-top">
+						<div class="logo">
+							<div></div>
+						</div>
+						<div class="mobile-hide binary-logo-text">
+							<div></div>
+						</div>
+					</a>
+				</div>   
 			</div>
 			<div class="col-lg-9">
-                <div class="topnav">
-                  <a class="page-scroll" href="#cpa">CPA</a>
-                  <a class="page-scroll" href="#why-us">Binary.comを選ぶ理由</a>
-                  <a class="page-scroll" href="#how-it-works">アフィリエイト活動について</a>
-                  <a class="page-scroll" href="#application">お申し込み</a>
-                  <a class="page-scroll" href="#payments">支払い報酬</a> 
-                    <a class="button" href="https://login.binary.com/signup.php?lang=13"><span>サインアップ</span></a>
-                </div>
+                <div class="row">
+                    <div class="col">
+                       <div class="topbar">
+                            
+                                        <div class="languages">
+                                            <ul id="display_language">
+                                                <li class="EN">
+                                                    <span class="world world-white"></span>
+                                                        <div class="language-wrapper">
+                                                            <span class="language">{% if siteLang == "en" %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% else %}English{% endif %}</span>
+                                                        </div>
+                                                    <span class="nav-caret"></span>
+                                                </li>
+                                            </ul>
+                                            <ul id="select_language">
+                                                <li class="EN">
+                                                    <span class="world world-black"></span>
+                                                        <div class="language-wrapper">
+                                                            <span class="language">{% if siteLang == "en" %}English{% elsif siteLang == "id" %}Indonesia{% elsif siteLang == "ru" %}Русский{% else %}English{% endif %}</span>
+                                                        </div>
+                                                    <span class="nav-caret"></span>
+                                                </li>
+                                                <li class="ID {% if siteLang == 'id' %}invisible{% endif %}"><a href="{{ '/id/' | prepend: SourceUrl }}">Indonesia</a></li>
+                                                <li class="EN {% if siteLang == 'en' %}invisible{% endif %}"><a href="{{ '/' | prepend: SourceUrl }}">English</a></li>
+                                                <li class="RU {% if siteLang == 'ru' %}invisible{% endif %}"><a href="{{ '/ru/' | prepend: SourceUrl }}">Русский</a></li>
+                                            </ul>
+                                        </div>				    		
+                                    </div>
+                                </div>
+                            
+                 </div> 
+                <div class="row">
+                    <div class="col">
+                        <div class="topnav">
+                            <a class="page-scroll" href="#commission-plans">Commission plans</a>
+                            <a class="page-scroll" href="#why-us">Why us</a>
+                             <a class="page-scroll" href="#awards">Awards</a>
+                            <a class="page-scroll" href="#how-programme-woks">How it works</a>
+                            <a class="page-scroll" href="#video">Video</a>
+                        </div>
+                      </div>  
+                 </div>   
             </div> 
 		</div>
 	</div>
 </nav>
+
+
