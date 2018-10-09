@@ -8,8 +8,6 @@ twitter_username:
 github_username: 
 future: true
 
-livereload: true
-
 markdown: kramdown
 plugins:
   - jekyll-feed
