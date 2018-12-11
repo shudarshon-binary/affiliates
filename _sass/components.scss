@@ -53,8 +53,8 @@
 }
 
 .header-subtitle {
-    font-size: 68px;
-    font-weight: 100;
+    font-size: 36px;
+    font-weight: 300;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -120,6 +120,7 @@
 @media only screen and (max-width:990px) {
     .header-title, .header-subtitle {
         font-size: 36px;
+        font-weight: 300;
     }
     .mel-1 {
         font-size: 36px !important;
