@@ -25,6 +25,14 @@ var images = document.querySelectorAll("img"),
     });
   },
   observer = new IntersectionObserver(handleIntersection, options);
-images.forEach(function(a) {
-  observer.observe(a);
-});
+if (
+  (images.forEach(function(a) {
+    observer.observe(a);
+  }),
+  "IntersectionObserver" in window)
+)
+  var _observer = new IntersectionObserver(handleIntersection, options);
+else
+  Array.from(images).forEach(function(a) {
+    return loadImage(a);
+  });
