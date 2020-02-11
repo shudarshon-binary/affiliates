@@ -1,0 +1,116 @@
+version: 2.1
+orbs:
+  s3: circleci/aws-s3@1.0.13
+commands:
+  git_checkout_from_cache:
+    description: "Git checkout and save cache"
+    steps:
+      - restore_cache:
+          name: Git restore cache
+          keys:
+            - source-v2-{{ .Branch }}-{{ .Revision }}
+            - source-v2-{{ .Branch }}-
+            - source-v2-
+      - run: 
+          name: Fetch git tags 
+          command: |
+            mkdir -p ~/.ssh
+            echo 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ== ' >> ~/.ssh/known_hosts
+            # Fetch tags if git cache is present
+            if [ -e /home/circleci/project/.git ]
+            then
+              git fetch origin --tags
+            fi
+      - checkout
+      - run:
+          name: Compress git objects 
+          command: git gc
+      - save_cache:
+          name: Git save cache
+          key: source-v2-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - ".git"
+  bundle_install:
+    description: "Bundle install"
+    steps:
+      - restore_cache:
+          name: Bundle modules cache restore
+          keys:
+            - bundle-v1-{{ checksum "Gemfile" }}
+            - bundle-v1-
+      - run:
+          name: Bundle install
+          command: |
+            bundle install --path ./modules
+      - save_cache:
+          name: Bundle modules cache save
+          key: bundle-v1-{{ checksum "Gemfile" }}
+          paths:
+            - "modules"
+  release:
+    description: "Build Jekyll site"
+    steps:
+      - restore_cache:
+          name: "Build cache restore"
+          keys:
+            - _site-v1-{{ .Revision }}
+            - _site-v1-
+      - run:
+          name: Building Jekyll site
+          command: bundle exec jekyll build --incremental
+      - save_cache:
+          name: Build cache save
+          key: _site-v1-{{ .Revision }}
+          paths:
+            - _site
+  compress:
+    description: "Compress"
+    steps:
+      - run:
+          name: "Compress"
+          command: |
+            pushd _site/
+            tar -cvf artifact.tar *
+            mv artifact.tar ${OLDPWD}/
+      - run:
+          name: "Tag commit id as artifact identifer"
+          command: echo "${CIRCLE_SHA1}" > artifact-info.txt
+  upload_artifact:
+    description: "upload artifact to s3"
+    steps:
+      - s3/copy:    
+          from: artifact.tar
+          to: 's3://${CONTEXT_ARTIFACT_S3_BUCKET}/${CIRCLE_PROJECT_REPONAME}/'
+          aws-access-key-id: env_CONTEXT_ARTIFACT_S3_AWS_ACCESS_KEY_ID
+          aws-secret-access-key: env_CONTEXT_ARTIFACT_S3_AWS_SECRET_ACCESS_KEY
+          aws-region: env_CONTEXT_ARTIFACT_S3_AWS_REGION
+          arguments: '--metadata "{\"x-amz-artifact-id\": \"${CIRCLE_SHA1}\" }"'
+  upload_checksum:
+    description: "upload artifact checksum to s3"
+    steps:
+      - s3/copy:    
+          from: artifact-info.txt
+          to: 's3://${CONTEXT_ARTIFACT_S3_BUCKET}/${CIRCLE_PROJECT_REPONAME}/'
+          aws-access-key-id: env_CONTEXT_ARTIFACT_S3_AWS_ACCESS_KEY_ID
+          aws-secret-access-key: env_CONTEXT_ARTIFACT_S3_AWS_SECRET_ACCESS_KEY
+          aws-region: env_CONTEXT_ARTIFACT_S3_AWS_REGION
+jobs:
+  release:
+    docker:
+      - image: circleci/ruby:2.5.0
+    steps:
+      - git_checkout_from_cache
+      - bundle_install
+      - release
+      - compress
+      - upload_artifact  # uploading the built code to s3
+      - upload_checksum  # uploading compressed artifact checksum to cross match artifact fingerprint
+workflows:
+  release:
+    jobs:
+      - release:
+          filters:
+            branches:
+              only: /^master/
+          context: binary-frontend-deploy  # need to chagne the context name here
+
